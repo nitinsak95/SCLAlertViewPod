@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94911A28ED512F4120C33D88 /* Pods_CustomisedAlertAsXib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A462FE8C11D1B2BCFCCB2284 /* Pods_CustomisedAlertAsXib.framework */; };
 		A45DA27F209C281300D197EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DA27E209C281300D197EF /* AppDelegate.swift */; };
 		A45DA281209C281300D197EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45DA280209C281300D197EF /* ViewController.swift */; };
 		A45DA284209C281300D197EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A45DA282209C281300D197EF /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89C9E9037665A5F23A570F36 /* Pods-CustomisedAlertAsXib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomisedAlertAsXib.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomisedAlertAsXib/Pods-CustomisedAlertAsXib.release.xcconfig"; sourceTree = "<group>"; };
 		A45DA27B209C281300D197EF /* CustomisedAlertAsXib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomisedAlertAsXib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45DA27E209C281300D197EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A45DA280209C281300D197EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		A45DA285209C281300D197EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A45DA288209C281300D197EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A45DA28A209C281300D197EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A462FE8C11D1B2BCFCCB2284 /* Pods_CustomisedAlertAsXib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomisedAlertAsXib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E26B2A8E826299720CE37D /* Pods-CustomisedAlertAsXib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomisedAlertAsXib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomisedAlertAsXib/Pods-CustomisedAlertAsXib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94911A28ED512F4120C33D88 /* Pods_CustomisedAlertAsXib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CF5D1664E1BBE719A98C6EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8E26B2A8E826299720CE37D /* Pods-CustomisedAlertAsXib.debug.xcconfig */,
+				89C9E9037665A5F23A570F36 /* Pods-CustomisedAlertAsXib.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		12AF9CAA9BCFDD291036DED4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A462FE8C11D1B2BCFCCB2284 /* Pods_CustomisedAlertAsXib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A45DA272209C281200D197EF = {
 			isa = PBXGroup;
 			children = (
 				A45DA27D209C281300D197EF /* CustomisedAlertAsXib */,
 				A45DA27C209C281300D197EF /* Products */,
+				0CF5D1664E1BBE719A98C6EA /* Pods */,
+				12AF9CAA9BCFDD291036DED4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A45DA28D209C281300D197EF /* Build configuration list for PBXNativeTarget "CustomisedAlertAsXib" */;
 			buildPhases = (
+				20BBDD9ECB525F9DBE5061A0 /* [CP] Check Pods Manifest.lock */,
 				A45DA277209C281300D197EF /* Sources */,
 				A45DA278209C281300D197EF /* Frameworks */,
 				A45DA279209C281300D197EF /* Resources */,
+				F10011E2F27F3A91A8D447A0 /* [CP] Embed Pods Frameworks */,
+				C7D6B1BDE56B746C20168B0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20BBDD9ECB525F9DBE5061A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomisedAlertAsXib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7D6B1BDE56B746C20168B0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CustomisedAlertAsXib/Pods-CustomisedAlertAsXib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F10011E2F27F3A91A8D447A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CustomisedAlertAsXib/Pods-CustomisedAlertAsXib-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CustomisedAlertAsXib/Pods-CustomisedAlertAsXib-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A45DA277209C281300D197EF /* Sources */ = {
@@ -272,9 +353,11 @@
 		};
 		A45DA28E209C281300D197EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E26B2A8E826299720CE37D /* Pods-CustomisedAlertAsXib.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YHKB8C6MSB;
 				INFOPLIST_FILE = CustomisedAlertAsXib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = affixus.CustomisedAlertAsXib;
@@ -286,9 +369,11 @@
 		};
 		A45DA28F209C281300D197EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C9E9037665A5F23A570F36 /* Pods-CustomisedAlertAsXib.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YHKB8C6MSB;
 				INFOPLIST_FILE = CustomisedAlertAsXib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = affixus.CustomisedAlertAsXib;
